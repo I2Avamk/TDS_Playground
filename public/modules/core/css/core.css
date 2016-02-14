@@ -1,0 +1,99 @@
+body{
+  /*background-image: url(../img/bgr/bk.png);*/
+  background-color: rgba(170, 170, 170, 0.10);
+  background-repeat: repeat;
+  background-size: 230px 230px;
+}
+
+.biggerTitle{
+  font-size: 300%
+}
+
+.xScroll{
+  overflow-x: scroll;
+}
+
+.minWidth{
+  min-width: 130px;
+}
+
+.underline{
+  border-style: none none solid none; 
+  border-width: 7px;
+}
+
+.doubleLine{
+  border-style: solid none solid none; 
+  border-width: 6px;
+}
+
+/*hr { 
+    border-width: 3px;
+}*/
+
+.fixed {
+  margin-top: 200px;
+  position:fixed;
+}
+.content {
+  margin-top: 40px;
+  margin-bottom: 45px;
+  
+}
+
+.lowerForAlerts {
+  margin-top: 150px;
+  
+}
+.paddingLeft {
+  padding-left: 450px;
+  
+}
+
+.container-fluid{
+  font-size: 120%;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+.undecorated-link:hover {
+	text-decoration: none;
+}
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+	display: none !important;
+}
+.ng-invalid.ng-dirty {
+	border-color: #FA787E;
+}
+.ng-valid.ng-dirty {
+	border-color: #78FA89;
+}
+
+
+
+/********************Animation************************************************/
+/* when hiding the thing */
+/*.ng-hide-add-active         */
+/*[ui-view].ng-enter{ 
+  -webkit-animation:0.8s fadeIn ; 
+  animation:0.8s fadeIn ; 
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}*/

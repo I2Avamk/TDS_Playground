@@ -1,0 +1,93 @@
+<section class="row" data-ng-controller="UserManagementController">
+    <!-- Header -->
+    <div class="jumbotron gray_background text-center">
+        <div class="row">
+            <div class="col-md-10 col-md-offset-1 text-primary">
+                <h1>Register</h1>
+            </div>
+        </div>
+    </div>
+
+    <div class="panel panel-default">
+    	<div class="panel-heading">
+    		<h4>
+    			<b>
+		    		<span class="glyphicon glyphicon-user" aria-hidden="true"></span>
+		    		New User
+	    		</b>
+	    	</h4>
+    	</div>
+        <div class="panel-body">
+			<div class="col-xs-offset-2 col-xs-8 col-md-offset-3 col-md-6">
+			<form name="userForm" data-ng-submit="create()" class="" novalidate autocomplete="off">
+				<fieldset>
+					<div class="input-group">
+						<span class="input-group-addon">
+							<span class="glyphicon glyphicon-font" aria-hidden="true"></span>
+						</span>
+						<input type="text" required id="firstName" name="firstName" class="form-control" data-ng-model="credentials.firstName" placeholder="First Name">
+					</div>
+					<br>
+					<div class="input-group">
+						<span class="input-group-addon">
+							<span class="glyphicon glyphicon-bold" aria-hidden="true"></span>
+						</span>
+						<input type="text" id="lastName" name="lastName" class="form-control" data-ng-model="credentials.lastName" placeholder="Last Name">
+					</div>
+					<br>
+					<div class="input-group">
+						<span class="input-group-addon">
+							<span class="glyphicon glyphicon-phone" aria-hidden="true"></span>
+						</span>
+						<input type="text" id="phone" name="phone" class="form-control" data-ng-model="credentials.phone" placeholder="Phone">
+					</div>
+					<br>
+					<div class="input-group">
+						<span class="input-group-addon">
+							<span class="glyphicon glyphicon-road" aria-hidden="true"></span>
+						</span>
+						<input type="text" id="address" name="address" class="form-control" data-ng-model="credentials.address" placeholder="Address">
+					</div>
+					<br>
+					<div class="input-group">
+						<span class="input-group-addon">
+							<span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>
+						</span>
+						<input type="email" id="email" name="email" class="form-control" data-ng-model="credentials.email" placeholder="Email">
+					</div>
+					<br>
+					<div class="input-group">
+						<span class="input-group-addon">
+							<span class="glyphicon glyphicon-user" aria-hidden="true"></span>
+						</span>
+						<input type="text" id="username" name="username" class="form-control" data-ng-model="credentials.username" placeholder="Username">
+					</div>
+					<br>
+					<div class="input-group">
+						<span class="input-group-addon">
+							<span class="glyphicon glyphicon-asterisk" aria-hidden="true"></span>
+						</span>
+						<input type="password" id="password" name="password" class="form-control" data-ng-model="credentials.password" placeholder="Password">
+					</div>
+					<br>
+					<div class="input-group">
+						<span class="input-group-addon">
+							<span class="glyphicon glyphicon-asterisk" aria-hidden="true"></span>
+						</span>
+						<input type="password" id="repassword" name="repassword" class="form-control" data-ng-model="credentials.repassword" placeholder="Re-Password">
+					</div>
+					<hr>
+					<div class="text-left form-group">
+						<button type="submit" class="btn btn-lg btn-primary">Create</button>
+					</div>
+					
+					<div data-ng-show="error" class="text-center text-danger">
+						<strong data-ng-bind="error"></strong>
+					</div>
+				</fieldset>
+			</form>
+		</div>
+        </div>
+    </div>
+
+</section>

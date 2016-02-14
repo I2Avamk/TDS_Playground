@@ -1,0 +1,23 @@
+{% extends 'layout.server.view.html' %}
+
+{% block alert %}
+	<!-- Alerts -->
+	<section class="row" data-ng-controller="AlertsController">
+		<div class="col-md-2 col-md-offset-5 fixed ">
+			<div class="alert alert-success text-center bigger_size" role="alert" ng-show="successAlert">
+				<p><b><span class="glyphicon glyphicon-ok" aria-hidden="true"></span> Success!</b></p>
+			</div>
+			<div class="alert alert-danger text-center" role="alert" ng-show="failAlert">
+				<p><b>
+					<span class="glyphicon glyphicon-remove" aria-hidden="true"></span> 
+					Fail!
+					<small ng-bind="failReason"></small>
+				</b></p>
+			</div>
+		</div>
+	</section>
+{% endblock %}
+
+{% block content %}
+	<section data-ui-view></section>
+{% endblock %}
